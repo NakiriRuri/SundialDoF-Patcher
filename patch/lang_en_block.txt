@@ -1,0 +1,19 @@
+option.DOF_TECHNIQUE=§eDOF Algorithm§r
+option.DOF_TECHNIQUE.comment=Selects the algorithm used by Depth of Field. Legacy: the original Complementary/Euphoria Patches blur. Sundial Physical: physical thin-lens circle of confusion with CoC spread and scatter-as-gather sampling, ported from Sundial Lite 1.2.0 (GPL-3.0). §c[-]§r Only affects "Depth of Field" in World Blur.
+value.DOF_TECHNIQUE.0=§aLegacy
+value.DOF_TECHNIQUE.1=§cSundial Physical
+
+option.DOF_SAMPLES=Sundial Physical - Samples
+option.DOF_SAMPLES.comment=Gather samples used by the Sundial Physical DOF. 20-30 is enough for round shapes, 50-100 for polygons. §c[-]§r Performance decreases with higher values.
+
+option.DOF_COC_SPREAD_SAMPLES=Sundial Physical - CoC Spread Samples
+option.DOF_COC_SPREAD_SAMPLES.comment=Depth samples used to spread the blur of foreground objects over the background, which removes the light bleeding around sharp foreground edges. Default is 10.
+
+option.DOF_APERTURE_DIAMETER_SCALE=Sundial Physical - Aperture Diameter Scale
+option.DOF_APERTURE_DIAMETER_SCALE.comment=Aperture of the virtual lens. Together with "Depth of Field Strength" it sets how strong the blur is. Default is 0.26.
+
+option.DOF_FOCAL_LENGTH=Sundial Physical - Camera Focal Length
+option.DOF_FOCAL_LENGTH.comment=Focal length of the virtual lens in metres. Smaller values increase the blur of everything behind the focus point.
+
+option.DOF_MAX_BLUR_RADIUS=Sundial Physical - Max Blur Radius
+option.DOF_MAX_BLUR_RADIUS.comment=Hard limit of the blur radius, in units of 15 pixels at 1080p. Default is 1.0.

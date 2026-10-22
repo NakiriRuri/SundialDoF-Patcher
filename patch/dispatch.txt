@@ -1,0 +1,5 @@
+            #if DOF_TECHNIQUE > 0 && WORLD_BLUR == 2
+                DoWorldBlurSundial(color, z1);
+            #else
+                DoWorldBlur(color, z1, lViewPos);
+            #endif

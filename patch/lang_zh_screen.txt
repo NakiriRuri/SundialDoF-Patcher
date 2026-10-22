@@ -1,0 +1,1 @@
+screen.DOF_SUNDIAL_SETTINGS=Sundial 物理设置

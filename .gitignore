@@ -1,0 +1,21 @@
+# build output
+build/
+dist/
+*.class
+*.jar
+
+# python
+__pycache__/
+*.pyc
+
+# internal: kept local, never published
+/NOTICE.md
+/docs/
+/presets/
+/tools/
+/build.ps1
+
+# local test / scratch
+/tmp/
+/test/
+_scratch/

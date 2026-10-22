@@ -1,0 +1,19 @@
+option.DOF_TECHNIQUE=§e景深算法§r
+option.DOF_TECHNIQUE.comment=选择景深所使用的算法。. 原版(Old): Complementary/Euphoria Patches 原本的模糊。. Sundial 物理: 基于物理薄透镜的弥散圆, 附带弥散圆扩散与散射式聚集采样（移植自 Sundial Lite 1.2.0, GPL-3.0）。. §c[-]§r 仅影响视界模糊类型中的"景深"。.
+value.DOF_TECHNIQUE.0=§a原版
+value.DOF_TECHNIQUE.1=§cSundial 物理
+
+option.DOF_SAMPLES=Sundial 物理 - 采样数
+option.DOF_SAMPLES.comment=Sundial 物理景深的聚集采样数。. 圆形虚化 20-30 足够, 多边形虚化建议 50-100。. §c[-]§r 性能随着设置更高的值而降低。.
+
+option.DOF_COC_SPREAD_SAMPLES=Sundial 物理 - 弥散圆扩散采样数
+option.DOF_COC_SPREAD_SAMPLES.comment=用于把前景物体的模糊扩散到背景的深度采样数, 可以消除清晰前景边缘周围的溢光。. 默认为 10。.
+
+option.DOF_APERTURE_DIAMETER_SCALE=Sundial 物理 - 光圈直径缩放
+option.DOF_APERTURE_DIAMETER_SCALE.comment=虚拟镜头的光圈。. 与"景深强度"共同决定模糊的强弱。. 默认为 0.26。.
+
+option.DOF_FOCAL_LENGTH=Sundial 物理 - 镜头焦距
+option.DOF_FOCAL_LENGTH.comment=虚拟镜头的焦距, 单位为米。. 数值越小, 焦点之后的所有物体的模糊越强。.
+
+option.DOF_MAX_BLUR_RADIUS=Sundial 物理 - 最大模糊半径
+option.DOF_MAX_BLUR_RADIUS.comment=模糊半径的硬上限, 单位为 1080p 下的 15 像素。. 默认为 1.0。.
